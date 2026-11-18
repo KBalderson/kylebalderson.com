@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kyle Balderson</title>
+  <meta name="description" content="Links for Kyle Balderson: Agentic Build Night, Vibe Launch Lab, Balderson Software, and LinkedIn.">
+  <meta property="og:title" content="Kyle Balderson">
+  <meta property="og:description" content="Agentic Build Night · Vibe Launch Lab · Balderson Software · LinkedIn">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kylebalderson.com/">
+  <meta name="theme-color" content="#0f1115">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230f1115'/><text x='50' y='66' font-family='system-ui,sans-serif' font-size='46' font-weight='700' fill='white' text-anchor='middle'>KB</text></svg>">
+  <style>
+    :root {
+      --bg: #f6f6f4;
+      --fg: #15171c;
+      --muted: #5d6270;
+      --card: #ffffff;
+      --card-border: #e3e3df;
+      --card-hover: #15171c;
+      --card-hover-fg: #ffffff;
+      --avatar-bg: #15171c;
+      --avatar-fg: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1115;
+        --fg: #f2f2ef;
+        --muted: #9a9fab;
+        --card: #181b21;
+        --card-border: #2a2e37;
+        --card-hover: #f2f2ef;
+        --card-hover-fg: #0f1115;
+        --avatar-bg: #f2f2ef;
+        --avatar-fg: #0f1115;
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { height: 100%; }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      justify-content: center;
+      padding: 72px 16px 48px;
+    }
+
+    main {
+      width: 100%;
+      max-width: 520px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: var(--avatar-bg);
+      color: var(--avatar-fg);
+      display: grid;
+      place-items: center;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 36px;
+    }
+
+    ul {
+      list-style: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    a.link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      min-height: 60px;
+      padding: 16px 48px;
+      border-radius: 14px;
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      color: var(--fg);
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 600;
+      text-align: center;
+      transition: background-color .15s ease, color .15s ease, transform .15s ease, border-color .15s ease;
+    }
+
+    a.link::after {
+      content: "↗";
+      position: absolute;
+      right: 20px;
+      font-weight: 400;
+      opacity: .45;
+      transition: opacity .15s ease;
+    }
+
+    a.link:hover,
+    a.link:focus-visible {
+      background: var(--card-hover);
+      border-color: var(--card-hover);
+      color: var(--card-hover-fg);
+      transform: translateY(-1px);
+    }
+
+    a.link:hover::after,
+    a.link:focus-visible::after { opacity: 1; }
+
+    a.link:focus-visible {
+      outline: 2px solid var(--fg);
+      outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      a.link { transition: none; }
+      a.link:hover, a.link:focus-visible { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="avatar" aria-hidden="true">KB</div>
+    <h1>Kyle Balderson</h1>
+    <ul>
+      <li><a class="link" href="https://luma.com/qvjkylm5" target="_blank" rel="noopener">Agentic Build Night</a></li>
+      <li><a class="link" href="https://vibelaunchlab.com/" target="_blank" rel="noopener">Vibe Launch Lab</a></li>
+      <li><a class="link" href="https://baldersonsoftware.com" target="_blank" rel="noopener">Balderson Software</a></li>
+      <li><a class="link" href="https://www.linkedin.com/in/fkbalderson/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </main>
+</body>
+</html>
